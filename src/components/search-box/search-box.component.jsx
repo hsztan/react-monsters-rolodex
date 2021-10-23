@@ -1,12 +1,12 @@
 import './search-box.styles.css'
 
-const SearchBox = () => {
+const SearchBox = ({ placeholder, handleChange }) => {
   return (
     <input
-      className=".search"
+      className="search"
       type="search"
-      placeholder="search monsters"
-      onChange={(e) => this.setState({ searchField: e.target.value })}
+      placeholder={ placeholder }
+      onChange={ handleChange }
     />
    );
 }
